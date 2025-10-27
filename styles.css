@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Inter';
+    src:
+        url('assets/fonts/Inter/Inter-Regular.woff2') format('woff2'),
+        url('assets/fonts/Inter/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    /* + */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    /* + fallbacks */
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center 20%;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin: 0.5rem 0;
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.degree-container {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.degree-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    color: #9a9a9a;
+    /* slightly higher contrast */
+    margin-bottom: 0.3rem;
+}
+
+.subline {
+    font-size: 0.95rem;
+    color: #bbb;
+    margin-bottom: 1.5rem;
+}
+
+/* pulled from inline styles */
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    background: #222;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.2s ease-in-out;
+}
+
+.link-button:hover,
+.link-button:focus {
+    background: #333;
+}
+
+.link-button i {
+    font-size: 1.25rem;
+}
+
+footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #9a9a9a;
+    /* bump contrast */
+}
+
+footer a {
+    color: #cfcfcf;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 1.5rem 1rem;
+        border-radius: 1rem;
+    }
+}
