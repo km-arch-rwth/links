@@ -13,7 +13,7 @@ You can access the deployed page here:
 
 - **Instagram:** [@km_rwth](https://www.instagram.com/km_rwth/)
 - **Website:** [km.arch.rwth-aachen.de](https://www.km.arch.rwth-aachen.de/)
-- **Imprint:** [Impressum](https://www.km.arch.rwth-aachen.de)
+- **Imprint:** [Impressum](https://www.km.arch.rwth-aachen.de/cms/km-arch/footer/service/~bgeyah/impressum/)
 
 ---
 
